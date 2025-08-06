@@ -1,0 +1,51 @@
+:root {
+    --forest: #3E5F44;
+    --canopy: #5E936C;
+    --foliage: #93DA97;
+    --sand: #E8FFD7;
+    --font-size: 2em;
+    --block-size: var(--font-size); 
+} 
+
+#hours, #mins, #secs {
+    width: var(--block-size);
+    height: fit-content;
+    background-color: var(--canopy);
+    color: var(--sand);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, 
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 0.6em;
+    
+    font-family: 'Mozilla Headline', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100; 
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2em 0.1em 0.4em 0.1em;
+    text-align: center;
+}
+
+#clock {
+    border: 2px solid var(--forest);
+    width: fit-content; 
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    padding: 0.75em;
+    background-color: var(--sand);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 100px 200px -40px, 
+                rgba(0, 0, 0, 0.3) 0px 60px 120px -60px, 
+                rgba(10, 37, 64, 0.35) 0px -4px 12px 0px inset;
+    
+    outline: 0.2em solid var(--foliage);
+    outline-offset: -0.5em;
+    border-radius: 0.5em;
+    outline-style: groove;
+}
+
